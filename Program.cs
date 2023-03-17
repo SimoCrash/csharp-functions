@@ -18,3 +18,26 @@ void StampaArray(int[] array)
 }
 
 StampaArray(myArray);
+
+int num = 5;
+int Quadrato(int numero)
+{
+    numero *= numero;
+    return numero;
+}
+
+Console.WriteLine(Quadrato(num));
+
+
+
+
+
+
+
+//Int TrovaMinimo(int index, int[] array, int min)
+//{
+
+//    Return TrovaMinimo( … , …, … );
+//}
+
+//TrovaMinimo(0, array, array[0]);
