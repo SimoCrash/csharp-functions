@@ -26,7 +26,34 @@ int Quadrato(int numero)
     return numero;
 }
 
-Console.WriteLine(Quadrato(num));
+Console.WriteLine("Il quadrato di " + num + " è " + Quadrato(num));
+
+
+//int[] ElevaArrayAlQuadrato(int[] array)
+//{
+//    var result = "[";
+//    for (int i = 0; i < array.Length; i++)
+//    {
+//        result += array[i] * array[i];
+//        if (i < array.Length - 1)
+//        {
+//            result += ", ";
+//        }
+//        result += "]";
+//    }
+//}
+
+int[] ElevaArrayAlQuadrato(int[] array)
+{
+    var result = new int[array.Length];
+    for (int i = 0; i < array.Length; i++)
+    {
+        result[i] = array[i] * array[i];
+    }
+    return result;
+}
+Console.WriteLine(ElevaArrayAlQuadrato(myArray));
+
 
 
 
